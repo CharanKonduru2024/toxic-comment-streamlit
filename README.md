@@ -93,8 +93,7 @@ The model is loaded directly from Hugging Face:
 ```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-model_name = "your-hf-username/your-model-name"
-
+model_name = "Charan789/deberta-toxic"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForSequenceClassification.from_pretrained(model_name)
 ```
@@ -130,24 +129,3 @@ Toxic Comment (Confidence: 0.94)
 - Model hosted on Hugging Face  
 - App deployed using Streamlit Cloud  
 
----
-
-## 📈 Future Improvements
-
-- Multi-label classification (toxic, insult, threat, etc.)  
-- Model explainability (SHAP / LIME)  
-- REST API using FastAPI  
-- Real-time moderation system  
-
----
-
-## 👨‍💻 Author
-
-Charan Konduru  
-MS Data Science, University at Buffalo  
-
----
-
-## 💡 Interview Summary
-
-Built an end-to-end NLP system for toxic comment classification using transformer models, deployed via Streamlit with model inference served from Hugging Face.
